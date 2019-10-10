@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package cosc435;
+
+message basicIMmessage {
+
+	required string nickname = 1;
+	required string content = 2;
+
+}
+
+message encryptedIMmessage {
+
+	required bytes iv = 1;
+	required bytes mac = 2;
+	required bytes cipherText = 3;
+
+}
